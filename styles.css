@@ -14,6 +14,7 @@ html{
 .fadeIn{
   animation: fade 0.5s ease-in-out;
 }
+
 @keyframes fade{
   0%{
       opacity: 0;
@@ -34,20 +35,22 @@ header{
 
   margin: 0 auto;
 
-  background-color: #F3F2F2;
+  background-color: #b4f10d;
 }
 
 .logo{
   display: flex;
   align-items: center;
   padding-left: 20px;
+  font-style: oblique;
 }
 .logo img{
   width: 60px;
+
 }
 .logo p {
   font-weight: bold;
-  color: #6a149b;
+  color: #092e04;
 }
 
 
@@ -63,8 +66,11 @@ nav ul li:last-child{
 }
 nav ul li a {
   text-decoration: none;
-  color: #6a149b;
+  color: #114d1e;
   padding: 10px;
+  text-decoration: double;
+  font-weight: bold;
+  font-style: italic;
 }
 /* ---------------------------------------------- */
 /*                      MAIN                      */
@@ -76,7 +82,7 @@ main{
 /* -------- BG IMAGE -------- */
 .stats{
   width: 100%;
-  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) ,url('./img/bg.jpg');
+  background-image: linear-gradient(rgba(0,0,0,0.9), rgba(0,0,0,0.9)) ,url('./img/covid-cells.jpg');
   background-size: cover;
 }
 /* -------- LATEST REPORT -------- */
@@ -89,7 +95,7 @@ main{
   margin: 0 auto;
   padding-top: 50px;
 
-  color: #FFF;
+  color: rgb(246, 248, 246);
 }
 
 .country,
@@ -101,12 +107,13 @@ main{
 
 .name{
   font-size: 2.2em;
-  color: #be64f1;
+  color: #6d64f1;
   font-weight: bold;
 }
 
 .change-country{
   cursor: pointer;
+  color: lemonchiffon;
 }
 
 .title{
@@ -115,16 +122,17 @@ main{
 .total-cases .value{
   font-size: 2em;
   font-weight: bold;
+  color: #ebee27;
 }
 .recovered .value{
   font-size: 2em;
   font-weight: bold;
-  color: #009688;
+  color: #22b1a2;
 }
 .deaths .value{
   font-size: 2em;
   font-weight: bold;
-  color: #f44336;
+  color: #f01809;
 }
 .new-value{
   font-size: 1.3em;
@@ -229,7 +237,7 @@ footer{
   height: 60px;
 
   margin: 0 auto;
-  background-color: #6a149b;
+  background-color: #8ba011;
 }
 
 .footer-container{
@@ -243,10 +251,6 @@ footer{
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.copyright p{
-  color: #FFF;
 }
 
 @media screen and (max-width: 600px){
